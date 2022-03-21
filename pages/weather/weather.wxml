@@ -1,0 +1,4 @@
+<!--pages/weather/weather.wxml-->
+<view>经纬度：{{geo_location}}</view>
+<view>天气温度：{{weather_now.temp}}℃</view>
+
