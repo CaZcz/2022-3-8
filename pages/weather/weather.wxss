@@ -1,1 +1,43 @@
-/* pages/weather/weather.wxss */
+
+/* pages/weather/weather.wxss *//* pages/index/index.wxss */
+/*页面全局样式*/
+.container{
+  display: flex; /*flex布局模型*/
+  flex-direction: column;
+  height: 100vh; /*高度为100视窗，写成100%无效*/
+  align-items: center;/*水平方向居中*/
+  justify-content: space-around;/*调整内容位置*/
+
+
+}
+
+/*文本样式*/
+text{
+  font-size: 80rpx;
+  color:#e4bd12;
+}
+
+/*图标样式*/
+image{
+  width: 220rpx;
+  height:220rpx
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 20rpx 0;
+  font-size: 40rpx;
+}
+
+.box{
+  width: 33.3%;
+  text-align: center;
+  font-size: 40rpx;
+}
