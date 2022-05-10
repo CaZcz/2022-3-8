@@ -1,0 +1,19 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">Ai识图</view>
+</cu-custom>
+<image src="/images/12c.jpg" mode="aspectFit"></image>
+<view class="bg-white light" >
+  <view class="detail">
+    <view class="bar" >
+      <view class="box">图片内容</view>
+      <view class="box">相似度</view>
+      <view class="box">类型</view>
+    </view>
+    <view class="bar">
+      <view class="box">{{result_num[0].keyword}}</view>
+      <view class="box">{{result_num[0].score}}</view>
+      <view class="box">{{result_num[0].root}}</view>
+    </view>
+  </view>
+</view>
+

@@ -20,7 +20,7 @@ text{
 /*图标样式*/
 image{
   width: 220rpx;
-  height:220rpx
+  height:220rpx;
 }
 .detail{
   display: flex;

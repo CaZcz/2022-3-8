@@ -1,21 +1,25 @@
-<!--pages/weather/weather.wxml-->
-<view class="container">
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">实时天气</view>
+</cu-custom>
+
+<!-- container -->
+<view class="container bg-white light">
+  <!--区域1：地区选择器-->
   <view class="section">
-    
     <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
-      <view >
+      <view class="bar">
         {{region[0]}}，{{region[1]}}，{{region[2]}}
       </view>
     </picker>
   </view>
 
-  <!-- 区域2，单行天气信息 -->
-  <view>{{weather_now.temp}}℃{{weather_now.text}}</view>
+  <!--区域2：单行天气信息-->
+  <!-- <view>{{geo_location}}</view> -->
+  <text>{{weather_now.temp}}℃ {{weather_now.text}}</text>
 
-  <!-- 区域3，天气图标 -->
-  <image> src="/images/{{weather_now.icon}}.png"</image>
-
-  <!-- 区域4，多行天气信息 -->
+  <!--区域3：天气图标-->
+  <image src="/images/{{weather_now.icon}}.png"> </image>
+  <!--区域4：多行天气信息-->
   <view class="detail">
     <view class="bar">
       <view class="box">湿度</view>
@@ -25,33 +29,18 @@
     <view class="bar">
       <view class="box">{{weather_now.humidity}}%</view>
       <view class="box">{{weather_now.pressure}}hPa</view>
-      <view class="box">{{weather_now.vis}}公里</view>
+      <view class="box">{{weather_now.vis}}km</view>
     </view>
     <view class="bar">
       <view class="box">风向</view>
       <view class="box">风速</view>
       <view class="box">风力</view>
     </view>
+    <view class="bar">
+      <view class="box">{{weather_now.windDir}}</view>
+      <view class="box">{{weather_now.windSpeed}}km/h</view>
+      <view class="box">{{weather_now.windScale}}级</view>
+    </view>
   </view>
 
-  
-  <view>经纬度：{{geo_location}}</view>
-  <view>体感温度：{{weather_now.feelsLike}}℃</view>
-  <view>天气状态：{{weather_now.text}}</view>
-  <view>风向角度：{{weather_now.wind360}}℃</view>
-  <view>风向：{{weather_now.windDir}}</view>
-  <view>风力等级：{{weather_now.windScale}}级</view>
-  <view>风速：{{weather_now.windSpeed}}km/h</view>
-  <view>相对湿度：{{weather_now.humidity}}%</view>
-  <view>当前小时累计降水量：{{weather_now.precip}}毫米</view>
-  <view>大气压强：{{weather_now.pressure}}hPa</view>
-  <view>能见度：{{weather_now.vis}}公里</view>
-
-
-
-
-
-
 </view>
-
-
