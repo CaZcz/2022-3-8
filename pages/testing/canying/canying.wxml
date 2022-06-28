@@ -4,10 +4,7 @@
 </cu-custom>
 
 
-<view>
-  <text>当前位置:{{region}}</text>
-</view>
-<view>中餐厅：</view>
+
 <view>--------------------------------</view>
 <view class="cu-card case {{isCard?'no-card':''}}" wx:for="{{pois}}">
   <view class="cu-item shadow">

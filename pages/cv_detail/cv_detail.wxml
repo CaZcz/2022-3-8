@@ -1,0 +1,32 @@
+<!--pages/cv/cv.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">AI识图</view>
+</cu-custom>
+
+<view class="cu-bar bg-white margin-top">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>{{title}}结果
+  </view>
+</view>
+
+<view class="bg-img bg-mask padding-tb-xl" style="background-image: url('{{bg_image}}');height: 100%;">
+  <view class="padding-xl text-white">
+    <view class="padding-xs text-xl">
+      名称：{{img_data.classifyByColor}}
+      {{img_data[0].name}}
+      {{img_data.landmark}}
+      {{img_data.currencyName}}
+      {{img_data.currencyCode}}
+    </view>
+    <view class="padding-xs">
+     {{img_data.classifyBySugar}}
+     {{img_data.color}}
+     {{img_data.countryCn}}
+     {{img_data.description}}
+     {{img_data[0].baike_info.description}}
+     {{img_data.currencyDenomination}}
+     {{img_data.currencyCode}}
+    </view>
+  </view>
+</view>

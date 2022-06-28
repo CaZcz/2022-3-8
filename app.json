@@ -2,9 +2,8 @@
   "pages":[
     "pages/testing/testing",
     "pages/cv/cv",
-    "pages/index/index",
+    "pages/cv_detail/cv_detail",
     "pages/weather/weather",
-    
     "pages/testing/canying/canying",
     "pages/logs/logs"
   ],
@@ -32,6 +31,7 @@
         "selectedIconPath": "images/catch-selected.png",
         "iconPath": "images/catch.png"
       },
+
       {
         "pagePath": "pages/testing/testing",
         "text": "周边",
